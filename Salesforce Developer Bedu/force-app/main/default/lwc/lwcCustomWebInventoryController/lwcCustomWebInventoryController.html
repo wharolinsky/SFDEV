@@ -1,0 +1,14 @@
+<template>
+    <lightning-card title="QuoteLineItemCreation" >
+        <div class ="slds-m-around_medium">
+            <lightning-record-edit-form object-api-name="QuoteLineItem" onsubmit={submithandler}>
+                <lightning-messages></lightning-messages>
+                <lightning-input-field field-name="Product2Id"></lightning-input-field>
+                <lightning-input-field field-name="QuoteId" value={recordId} class="slds-hide"></lightning-input-field>
+                <lightning-input-field field-name="Quantity"></lightning-input-field>
+                <lightning-input-field field-name="UnitPrice"></lightning-input-field>
+                <lightning-button label="Create Quote Line Item" variant="brand"  class="slds-m-bottom_x-small" type="submit"></lightning-button>
+            </lightning-record-edit-form>
+        </div>
+    </lightning-card>
+</template>
