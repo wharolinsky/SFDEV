@@ -101,5 +101,3 @@ trigger triggerQuote on Quote (after update, before update) {
     
     
 }
-
-        }
